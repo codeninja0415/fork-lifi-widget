@@ -40,7 +40,7 @@ export const MainPage: React.FC = () => {
           {contractComponent}
         </ContractComponent>
       ) : null}
-      <SelectChainAndToken mb={2} />
+      {false ? <SelectChainAndToken mb={2} /> : null}
       {!custom ? (
         <AmountInput formType="from" sx={{ marginBottom: 2 }} />
       ) : null}
